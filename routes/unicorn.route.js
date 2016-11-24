@@ -18,6 +18,7 @@ class Unicorn extends BaseRoute {
     registerRoutes() {
         this.router
             .route(config.ROUTE.UNICORN_ENDPOINT)
+            .get((request, response) => response.json([]))
             .post((request, response, next) => {
                 let validationErrors;
 
@@ -37,6 +38,12 @@ class Unicorn extends BaseRoute {
 
                 response.sendStatus(httpCodes.CREATED);
             });
+
+        this.router
+            .route(config.ROUTE.UNICORN_ENDPOINT + '/:id')
+            .delete((request, response) => response.sendStatus(httpCodes.OK))
+            .get((request, response) => response.json({ colour: config.COLOURS.BLUE }))
+            .patch((request, response) => response.sendStatus(httpCodes.OK));
     }
 }
 

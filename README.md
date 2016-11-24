@@ -12,4 +12,4 @@ So, this is some boilerplate code I use to quickly whip up a Node.js API. The co
 
 ## Why did you bother to make this, Chief?
 
-Node.js is still an infant and I have built a few Node.js APIs in many different ways using different suggestions from the billions of blogs I have read. However, this project is a culmination of what I personally think works well for me. I have made things as modular as I can which allows for some nice testing and keeps the main file small. 
+Node.js is still in it's infancy and I have built a few Node.js APIs in many different ways using different suggestions from the billions of blogs I have read. However, this project is a culmination of what I personally think works well for me. I have made things as modular as I can which allows for some nice testing and keeps the main file small. 
