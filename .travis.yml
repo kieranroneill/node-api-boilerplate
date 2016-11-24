@@ -7,6 +7,9 @@ env:
 addons:
   artifacts: true
 
+notifications:
+  email: false
+
 install:
   - npm install
 
