@@ -59,5 +59,6 @@ test-results.xml
 **node_modules/
 
 ### misc
+.env
 tmp/
 npm-debug.log
